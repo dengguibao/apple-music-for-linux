@@ -6,7 +6,8 @@
   "main": "main.js",
   "scripts": {
     "start": "electron .",
-    "dist": "electron-builder --linux snap"
+	"dist": "electron-builder  --linux snap",
+	"build-win": "electron-builder"
   },
   "build": {
     "electronDownload": {
@@ -14,6 +15,9 @@
     },
     "appId": "apple-music-for-linux",
     "productName": "Apple Music",
+	"win":{
+		"icon": "apple-music-for-linux.png"
+	},
     "linux": {
       "target": "snap",
       "icon": "apple-music-for-linux.png",
